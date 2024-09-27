@@ -1,13 +1,3 @@
-# Web Technical Test
-
-You will build a tiny Yego Web app with React and ViteJS. The objective will be to test your technical skills and knowledge of this language and followings stack. You will be evaluated on the code structure and graphical structure of your application. The goal is to have a complete overview of your skills.
-
-**Please, try to aim for a maximum of 3 hours of work. We are not looking for a perfect solution, but a good one that is scalable, and surely we will have time to discuss it.**
-
-Feel free to ask me questions if needed, by email at <erwan.leprado@rideyego.com>
-
-Good luck and have fun! :)
-
 ## Introduction
 
 This is a simple web application that allows you to test your web application.
@@ -37,9 +27,21 @@ bun install
 
 ## Usage of web app
 
+Create .env file in packages/web-app and use the access token provided by email
+
+```bash
+VITE_MAPBOX_ACCESS_TOKEN=
+VITE_WEBSOCKET_URL=http://localhost:3000
+```
 ```bash
 cd packages/web-app
 bun dev
+```
+
+## Testing of web app
+```bash
+cd packages/web-app
+bun run test
 ```
 
 ## Usage of backend
